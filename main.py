@@ -104,13 +104,15 @@ def not_down(ball, plates):
 
 	return [False, "NONE"]			
 
-# Game Initiation
+# PyGame Initiation
 pygame.init()
 
 screen = pygame.display.set_mode((600, 600))
 
+# Loop for restarting the game
 while True:
-
+	
+	# Game Initiation
 	plates = [Plate()]
 
 	plates[0].set_xy(300 - Plate_len/2, 600 - Plate_thk)
